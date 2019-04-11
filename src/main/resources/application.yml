@@ -1,0 +1,19 @@
+server:
+  port: 8085
+  jsp-servlet:
+    init-parameters:
+      development: true
+  context-path: /boot
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/baizhi
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  type-aliases-package: com.baizhi.entity
